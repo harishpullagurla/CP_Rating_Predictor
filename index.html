@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP Rating Predictor </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ CP Rating Predictor ⚡</h1>
+        <p class="description">
+            Dive into the world of Competitive Programming . This tool uses a <span class="highlight">custom trained Linear Regression Model </span> based on over <span class="highlight">10,000+ real user profiles </span> across Codechef and Codeforces to intelligently predict your equivalent rating.
+            <br> <br>
+            Whether you are Aiming for a <span class="highlight">4-star on CodeChef</span> or trying to estimate your <span class="highlight">Expert Level on Codeforces </span>,this tool helps you to understand where you stand-what to aim for !!!
+        </p>
+        <div class="buttons">
+            <button onclick="Choose_Platform('codechef')">🌟 CodeChef</button>
+            <button onclick="Choose_Platform('codeforces')">⚔️ Codeforces</button>
+        </div>
+        <div class="input-section" id='input-area' style="display: none;" >
+            <label id="rating-label">Enter Rating</label>
+            <input type="number" id="rating" placeholder="Enter Your Rating ">
+            <br/>
+            <button class="predict" onclick="Predict_Rating()">🚀 Predict Rating</button>
+        </div>
+        <div class="result" id="output">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
